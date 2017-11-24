@@ -101,6 +101,7 @@
     "webpack-merge": "^4.1.0",
     "webpack-sources": "^1.0.0",
     "webpack-subresource-integrity": "^1.0.1",
+    "webpack-glsl-loader": "1.0.1",
     "zone.js": "^0.8.14"
   },
   "devDependencies": {
