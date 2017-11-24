@@ -152,6 +152,11 @@ export function getCommonConfig(wco: WebpackConfigOptions) {
       }]
     });
   }
+  
+  extraRules.push({
+    test: /(\.glsl|\.vert|\.frag)$/,
+    loader: 'webpack-glsl-loader'
+  });
 
   if (buildOptions.namedChunks) {
     extraPlugins.push(new NamedLazyChunksWebpackPlugin());
